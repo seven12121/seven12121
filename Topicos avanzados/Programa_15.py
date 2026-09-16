@@ -12,3 +12,5 @@ elif opinion==3:
 
 else:
     print("Opinion valida")
+
+    

@@ -1,12 +1,18 @@
-#WWhile condicion instrucciones 
-#Mientas condicion sea verdadera
-#Se ejecutan las instrucciones 
-#Imprimir los primeros 5 nuneros enteros 
+a = [4, 3, 2, 3.6, "python"]
+for y in a:
+    print(y)
 
-contador=1 #Condicion 
-while contador<=5:
-    print(contador)
-    contador=contador+1
+b = (2, -1, 4.6, "Hola")
+for x in b:
+    print(x)
 
-    print(contador)
+c = "Python"
+for letra in c:
+    print(letra)
 
+for m in [4, 3]:
+    print(m)
+
+d = range(-1, -2, -1)
+for x in d:
+    print(x)
