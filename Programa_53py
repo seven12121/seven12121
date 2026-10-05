@@ -1,0 +1,23 @@
+from customtkinter import *
+
+ventana=CTk()
+
+ventana.geometry("300x300+300+300")
+
+frame1=CTkFrame(ventana,fg_color="red")
+frame1.grid(row=0,column=0)
+
+
+frame2=CTkFrame(ventana,fg_color="blue")
+frame2.grid(row=0,column=1,padx=10)
+
+CTkLabel(frame1, text="Hola").pack(pady=10)
+CTkButton(frame1, text="Calcular").pack(pady=10)
+CTkEntry(frame1).pack(pady=10)
+
+CTkLabel(frame2, text="A: ").grid(row=0,column=0,pady=10)
+CTkEntry(frame2).grid(row=0,column=1,padx=10)
+CTkButton(frame2,text="Calcular").grid(row=1,columnspan=2,pady=10)
+CTkLabel(frame2, text="0.0").grid(row=2,columnspan=2,pady=10)
+
+ventana.mainloop()
